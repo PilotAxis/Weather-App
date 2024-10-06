@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.container {
+    display: flex;
+    border: none;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.591);
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+}
+
+.navBar input {
+    background-color: transparent;
+    border: none;
+    font-size: 3.5vh;
+    color: rgb(11, 0, 131);
+    text-align: center;
+}
+
+.navBar input::placeholder {
+    color: rgb(11, 0, 131);
+    text-align: center;
+}
+
+.navBar i {
+    color: rgb(11, 0, 131);
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 7px;
+    font-size: 3.5vh;
+}
+
+.navBar button {
+    padding-left: 3px;
+    padding-right: 10px;
+    font-size: 3.5vh;
+    background-color: transparent;
+    border: none;
+    color: rgb(11, 0, 131);
+    cursor: pointer;
+}
+
+.navBar button:hover {
+    padding: 6px;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    background-color: rgb(11, 0, 131);
+}
+
+.invalid-location {
+    width: 100%;
+    opacity: 0;
+    display: none;
+    scale: 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.weather-box {
+    text-align: center;
+}
+
+.weather-box img{
+    width: 60%;
+    margin-top: 30px;
+}
+
+.weather-box .temperature{
+    position: relative;
+    color: #06283D;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-left: -16px;
+}
+
+.weather-box .temperature span{
+    position: absolute;
+    margin-left: 4px;
+    font-size: 1.5rem;
+}
+
+.weather-box .description{
+    color: #06283D;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
