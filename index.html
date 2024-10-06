@@ -16,13 +16,13 @@
 
 <body>
     <div class="container">
-        <nav class="navBar">
+        <div class="search-box">
             <i class="fa-solid fa-location-dot"></i>
-            <input type="text" placeholder="Enter location" id="search-input" class="search-input" />
-            <button class="fa-solid fa-magnifying-glass" id="btn-search"></button>
-        </nav>
-        
-        <div class="invalid-location">
+            <input type="text" placeholder="Enter location" />
+            <button class="fa-solid fa-magnifying-glass"></button>
+        </div>
+
+        <div class="not-found">
             <img src="assets/Weather App 404.png" alt="" />
             <p>Oops! Invalid Location :/</p>
         </div>  
@@ -31,6 +31,23 @@
             <img src="" alt="" />
             <p class="temperature"></p>
             <p class="description"></p>
+        </div>
+
+        <div class="weather-details">
+            <div class="humidity">
+                <i class="fa-solid fa-water"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="wind">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
         </div>
     </div>
     <script src="https://kit.fontawesome.com/c500c04d3a.js" crossorigin="anonymous"></script>
